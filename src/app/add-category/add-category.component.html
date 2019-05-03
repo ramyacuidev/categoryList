@@ -1,0 +1,15 @@
+<div class="form-row">
+  <div class="col-1 text-center">
+    <img src="assets/images/group-11070.png" class="Group-11070">
+  </div>
+  <div class="col-3">
+    <input class="w-100 cat-name" type="text" id="categoryName" name="categoryName" placeholder="Category Name"
+      autofocus [(ngModel)]="category.categoryName">
+  </div>
+  <div class="col-6 cat-seq-block">
+    <div class="cat-seq">
+      <span>{{category.sequence}}</span>
+    </div>
+  </div>
+  <div class="col-2 save-cat text-right" (click)="save()"> SAVE</div>
+</div>

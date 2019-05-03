@@ -1,0 +1,36 @@
+<div class="col-12 p-0" #categoryListElement>
+  <div class="form-row cat-section">
+    <div class="col-6">Section</div>
+    <div class="col-6 text-right">
+      <span class="add-category" [ngClass]="{'add-disabled':addCategoryFlag}" (click)="addCategory()">+ ADD
+        CATEGORY</span>
+    </div>
+  </div>
+  <div class="form-row cat-header category">
+    <div class="col-1"></div>
+    <div class="col-3">CATEGORY</div>
+    <div class="col-7">SEQ</div>
+    <div class="col-1"></div>
+  </div>
+  <ul id="sortable" class="pl-0">
+    <li class="form-row catlist" *ngFor="let cat of catList; let i = index;" id="{{cat.categoryName}}">
+      <div class="col-1 text-center">
+        <img src="assets/images/group-11070.png" class="Group-11070">
+      </div>
+      <div class="col-3">{{cat.categoryName}}</div>
+      <div class="col-6 cat-seq-block">
+        <div class="cat-seq">
+          {{cat.sequence}}
+        </div>
+      </div>
+      <div class="col-2 text-right">
+        <div class="del-cat" (click)="deleteCat(cat)">
+          <img src="assets/images/group-15596.png" class="Group-15596">
+        </div>
+      </div>
+    </li>
+  </ul>
+  <div *ngIf="addCategoryFlag">
+    <app-add-category (categorySaved)="saveCategory($event)"></app-add-category>
+  </div>
+</div>

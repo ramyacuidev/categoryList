@@ -1,1 +1,125 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    font-size: 12px;
+    background-color: #eaeef5;
+    font-family: Helvetica;
+}
+.form-row {
+    margin: 0;
+    height: 45px;
+    line-height: 45px;
+}
+button:focus {
+    outline: none;
+}
+ul {
+    margin-bottom: 0;
+}
+.section {
+    margin: 3% 10%;
+    background: #fff;
+    box-shadow: 0 1px 3px 0 rgba(10, 54, 69, 0.16);
+}
+.bg-color{
+   background-color: #0a3645;
+}
+.nav-link{
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff !important;
+    width: 92px;
+    opacity: 0.55;
+    line-height: 20px;
+}
+.nav-link.active {
+    opacity: 1;
+    background-color: #4a636c;
+}
+@media only screen and (max-width: 768px) {
+    .section {
+        margin: 3% 3%;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .mobile-menu {
+        z-index: 1000;
+        background: #0a3645;
+        position: absolute;
+        width: 100%;
+    }
+}
+.Welcome-Christy {
+    color: #ffffff;
+    margin-right: 3%;
+}
+.Path-5031 {
+    margin-left: 5px;
+}
+.brand-logo {
+    position: absolute;
+    margin: 0 45%;
+    top: 0;
+    padding: 0 !important;
+}
+.brand-logo .nav-link {
+    opacity: 1;
+}
+.catlist {
+    cursor: pointer;
+}
+.add-category {
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 5.6;
+    color: #06b4de;
+    cursor: pointer;
+}
+.add-disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    color: #C0C0C0;
+}
+.cat-header {
+    border-bottom: 2px solid #F8F8F8
+}
+.cat-seq {
+    color: #fff;
+    background: #98cb65;
+    width: 21px;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 21px;
+}
+.cat-seq-block {
+    top:25%;
+}
+#sortable li:nth-child(even) {
+    background: #f0f2f5
+}
+#sortable li:nth-child(odd) {
+    background: #FFF
+}
+.cat-section {
+    padding: 10px;
+    font-size: 14px;
+}
+.save-cat {
+    cursor: pointer;
+    font-weight: bold;
+    color: #06b4de;
+}
+.cat-name {
+    height: 36px;
+    border: solid 1px #dbe1e5;
+    background-color: #f9fafc;
+}
+.cat-seq-block {
+    top:25%;
+}
+.category {
+    font-size: 9px;
+    font-weight: bold;
+    line-height: 6;
+    color: #7a8a90;
+  }
